@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1st page for Git Commit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Jecrc Foundation</li>
+      </ul>
+    </nav>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>S. No</th>
+          <th>1st Input</th>
+          <th>2nd Input</th>
+          <th>Method</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td id="first">-</td>
+          <td id="second">-</td>
+          <td id="output">-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      const a = Number.parseInt(prompt("Enter the value of a: "), 10) || 0;
+      const b = Number.parseInt(prompt("Enter the value of b: "), 10) || 0;
+
+      document.getElementById("first").textContent = a;
+      document.getElementById("second").textContent = b;
+      document.getElementById("output").textContent = `Sum: ${a + b}`;
+    </script>
+  </body>
+</html>
